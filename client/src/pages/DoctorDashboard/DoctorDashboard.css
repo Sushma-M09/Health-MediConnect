@@ -1,0 +1,95 @@
+/* Apply Poppins font to everything */
+body, * {
+  font-family: 'Poppins', sans-serif;
+}
+/* Glass-style card */
+.doctor-card {
+  width: 100%;
+  /* max-width: 1100px; */
+  padding: 25px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Card Title */
+.doctor-card .ant-card-head-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #222;
+}
+
+/* Table header style */
+.ant-table-thead > tr > th {
+  background: rgba(255, 255, 255, 0.5) !important;
+  color: #333;
+  font-weight: 600;
+  font-size: 15px;
+  backdrop-filter: blur(10px);
+}
+
+/* Table cell style */
+.ant-table-tbody > tr > td {
+  background: rgba(255, 255, 255, 0.15) !important;
+  font-size: 14px;
+  color: #222;
+  transition: background 0.3s ease;
+}
+
+/* Row hover effect */
+.ant-table-tbody > tr:hover > td {
+  background: rgba(255, 255, 255, 0.3) !important;
+}
+
+/* Primary Button */
+.ant-btn-primary {
+  background: linear-gradient(135deg, #667eea, #5ac8fa);
+  border: none;
+  color: white;
+  font-weight: 600;
+  padding: 6px 16px;
+  border-radius: 10px;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 6px 20px rgba(90, 200, 250, 0.4);
+  transition: all 0.3s ease;
+}
+
+.ant-btn-primary:hover {
+  background: linear-gradient(135deg, #5ac8fa, #667eea);
+  transform: scale(1.05);
+  box-shadow: 0 8px 30px rgba(102, 126, 234, 0.5);
+}
+
+/* Modal customization */
+.ant-modal-content {
+  border-radius: 16px;
+  backdrop-filter: blur(15px);
+  background: rgba(255, 255, 255, 0.85);
+}
+
+/* View link */
+a {
+  color: #5ac8fa;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Optional fadeIn animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

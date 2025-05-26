@@ -1,0 +1,80 @@
+/* General card styling */
+.ant-card {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+/* Title inside the page */
+.ant-typography h3 {
+  color: #1890ff;
+  font-weight: 600;
+}
+
+/* Table styling */
+.ant-table {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.ant-table-thead > tr > th {
+  background-color: #f0f5ff;
+  font-weight: 600;
+  color: #2a2a2a;
+}
+
+.ant-table-tbody > tr > td {
+  font-size: 14px;
+  color: #444;
+}
+
+/* Calendar styling */
+.ant-picker-calendar {
+  background-color: transparent;
+  border-radius: 10px;
+}
+
+.ant-picker-panel {
+  background: #ffffff;
+  border-radius: 10px;
+}
+
+.events .ant-badge-status-text {
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.ant-badge-status-green {
+  background-color: #52c41a;
+}
+
+/* Popover styling */
+.ant-popover-inner {
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.ant-popover-inner-content {
+  font-size: 14px;
+  color: #333;
+}
+
+.ant-btn-text {
+  color: #999;
+}
+
+.ant-btn-text:hover {
+  color: #ff4d4f;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .ant-card {
+    padding: 16px;
+  }
+
+  .ant-typography h3 {
+    font-size: 20px;
+  }
+}

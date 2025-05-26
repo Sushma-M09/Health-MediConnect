@@ -1,0 +1,158 @@
+/* Use Poppins font */
+body, * {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Layout background */
+.ant-layout {
+  background: linear-gradient(135deg, #e0f7fa, #f0f4ff);
+}
+
+/* Sidebar */
+.ant-layout-sider {
+  background: rgba(255, 255, 255, 0.08) !important;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 4px 0 20px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+/* Sidebar profile section */
+.ant-layout-sider > div:first-child {
+  background: transparent;
+  padding: 24px 12px;
+  text-align: center;
+  color: #fff;
+}
+
+.ant-layout-sider .ant-avatar {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Doctor name and designation */
+.ant-layout-sider .ant-typography {
+  color: #fff !important;
+}
+
+/* Sidebar Menu */
+.ant-menu {
+  background: transparent !important;
+  border: none;
+}
+
+.ant-menu-item {
+  font-weight: 500;
+  font-size: 15px;
+  margin: 6px 12px;
+  border-radius: 12px;
+  transition: 0.3s ease;
+  color: #000 !important;
+}
+
+.ant-menu-item a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.ant-menu-item-selected {
+  background: linear-gradient(135deg, #5ac8fa, #667eea) !important;
+  color: white !important;
+  font-weight: 600;
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.25);
+}
+
+/* Header */
+.ant-layout-header {
+  background: rgba(255, 255, 255, 0.6) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+
+/* Logo and Title in Header */
+.ant-layout-header img {
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.ant-layout-header h4 {
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: 600;
+  color: #1890ff !important;
+}
+
+/* Content card */
+.ant-layout-content > div {
+  background: rgba(255, 255, 255, 0.4) !important;
+  backdrop-filter: blur(12px);
+  border-radius: 24px;
+  padding: 30px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Dropdown Account Link */
+a[role="link"] {
+  color: #fff !important;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+a[role="link"]:hover {
+  text-decoration: underline;
+}
+
+/* Sidebar menu font fix */
+.ant-menu-item {
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-left: 16px !important;
+  padding-right: 16px !important;
+}
+
+/* Profile box inside sidebar */
+.profile-box {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 20px;
+  border-radius: 20px;
+  margin: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  font-family: 'Poppins', sans-serif !important;
+}
+
+/* Avatar */
+.profile-box .ant-avatar {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Doctor name and title */
+.profile-box .ant-typography {
+  color: #000 !important;
+  font-weight: 600;
+}
+
+/* Account dropdown link */
+.profile-box a {
+  color: #000 !important;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif !important;
+  transition: 0.3s ease;
+}
+
+.profile-box a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive: hide sidebar on small screens */
+@media (max-width: 768px) {
+  .ant-layout-sider {
+    display: none;
+  }
+}

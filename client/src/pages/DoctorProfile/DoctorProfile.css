@@ -1,0 +1,83 @@
+/* Doctor Profile Card */
+.ant-card {
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  padding: 24px;
+}
+
+/* Profile avatar section */
+.ant-avatar {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  border: 3px solid #fff;
+}
+
+/* Doctor name and title */
+.ant-typography h4 {
+  margin-bottom: 4px;
+  font-weight: 600;
+  color: #1890ff;
+}
+
+.ant-typography .ant-typography-secondary {
+  font-size: 14px;
+  color: #888;
+}
+
+/* Info text */
+p {
+  margin: 6px 0;
+  font-size: 15px;
+  color: #333;
+}
+
+p svg {
+  color: #1890ff;
+  margin-right: 8px;
+}
+
+/* Form styling */
+.ant-form-item-label > label {
+  font-weight: 500;
+  color: #333;
+}
+
+.ant-input,
+.ant-select-selector,
+.ant-input-number,
+.ant-picker {
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.ant-input,
+.ant-input-number input {
+  padding: 6px 12px;
+}
+
+.ant-input:focus,
+.ant-select-focused .ant-select-selector,
+.ant-picker-focused {
+  border-color: #1890ff;
+  box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+}
+
+/* Button style */
+.ant-btn-primary {
+  background-color: #1890ff;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+@media (max-width: 768px) {
+  .ant-card {
+    padding: 16px;
+    margin: 20px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}

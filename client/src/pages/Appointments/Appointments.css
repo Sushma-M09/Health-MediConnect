@@ -1,0 +1,101 @@
+/* Global font */
+body, * {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Title styling */
+.ant-typography h3 {
+  font-weight: 600;
+  color: #333;
+}
+
+/* Table card appearance */
+.ant-table-wrapper {
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+}
+
+/* Table headers */
+.ant-table-thead > tr > th {
+  background: transparent;
+  font-weight: 600;
+  color: #333;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+/* Table cells */
+.ant-table-tbody > tr > td {
+  font-size: 14px;
+  color: #444;
+}
+
+/* Table icons spacing */
+.ant-space {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Tags for status */
+.ant-tag {
+  font-size: 13px;
+  font-weight: 500;
+  padding: 4px 12px;
+  border-radius: 16px;
+}
+
+/* Rescheduled link */
+a {
+  font-weight: 500;
+  color: #1890ff;
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Modal styling */
+.ant-modal-content {
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+}
+
+.ant-modal-title {
+  font-weight: 600;
+  font-size: 18px;
+  color: #222;
+}
+
+/* Modal body text */
+.ant-modal-body p {
+  font-size: 14px;
+  color: #333;
+}
+
+/* Modal buttons */
+.ant-modal-footer .ant-btn {
+  font-weight: 500;
+  font-size: 14px;
+  padding: 6px 16px;
+  border-radius: 8px;
+}
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+  .ant-table-wrapper {
+    padding: 10px;
+  }
+
+  .ant-modal-body p {
+    font-size: 13px;
+  }
+
+  .ant-modal-footer .ant-btn {
+    font-size: 13px;
+  }
+}
